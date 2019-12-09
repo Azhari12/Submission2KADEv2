@@ -7,4 +7,7 @@
     <item name="tvNamaDetail" type="id" />
     <item name="tvDeskripsiDetail" type="id" />
     <item name="gambarDetail" type="id" />
+    <item name="btn_previousMatch" type="id" />
+    <item name="btn_NextMatch" type="id" />
+    <item name="match_event" type="id" />
 </resources>

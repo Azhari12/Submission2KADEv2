@@ -10,10 +10,9 @@ import android.widget.Toast
 import com.example.fottballmatchschedule2.Adapter.RecyclerVIewAdapter
 import com.example.fottballmatchschedule2.Model.Item
 import com.example.fottballmatchschedule2.R
-import org.jetbrains.anko.matchParent
+import org.jetbrains.anko.*
 import org.jetbrains.anko.recyclerview.v7.recyclerView
-import org.jetbrains.anko.relativeLayout
-import org.jetbrains.anko.startActivity
+import org.jetbrains.anko.sdk27.coroutines.onClick
 
 class MainActivity : AppCompatActivity() {
 
@@ -41,10 +40,12 @@ class MainActivity : AppCompatActivity() {
         initData()
         relativeLayout() {
             lparams(width = matchParent, height = matchParent)
+
             recyclerView() {
                 lparams {
                     width = matchParent
                     height = matchParent
+                    topMargin = dip(50)
                 }
                 id = R.id.club_list
                 layoutManager = LinearLayoutManager(context)
